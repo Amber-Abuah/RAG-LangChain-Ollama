@@ -1,14 +1,13 @@
 ## Retrieval Augmented Generation (RAG) With LangChain And Ollama
+A Python app where users are able to converse with a local Large Language Model (in this case Llama3 through [Ollama](https://ollama.com/)) about their local own documents.  
 
 Embeddings: [nomic-embed-text](https://ollama.com/library/nomic-embed-text)  
 Model: [Llama3](https://ollama.com/library/llama3)  
 Context Document: [Cat Wikipedia Page](https://en.wikipedia.org/wiki/Cat) converted to a PDF.
 
-A Python app where users are able to converse with a local Large Language Model (in this case Llama3 through [Ollama](https://ollama.com/)) about their local own documents.  
-
 The embeddings, model and context documents are easily interchangeable; update the `vector_database embedding` parameter, `model_name` and `pdf_path` variables accordingly.
 
-### Process:
+### Pipeline:
 - The document is loaded and split into smaller chunks.
 - These chunks are then stored in a Chroma vector database for retrieval.
 - When the user enters a prompt, context is retrieved from the Chroma database and appended onto the user's initial prompt as context.
