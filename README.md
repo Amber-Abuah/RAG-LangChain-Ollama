@@ -1,4 +1,4 @@
-# Retrieval Augmented Generation (RAG) With LangChain And Ollama
+## Retrieval Augmented Generation (RAG) With LangChain And Ollama
 
 Embeddings: [nomic-embed-text](https://ollama.com/library/nomic-embed-text)  
 Model: [Llama3](https://ollama.com/library/llama3)  
